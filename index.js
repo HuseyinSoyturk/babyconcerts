@@ -3,6 +3,7 @@ const cron = require('node-cron');
 const nodemailer = require('nodemailer');
 
 async function name() {
+    console.log('Istekler Basladi');
     try {
         const response = await axios('https://mobilet.com/_next/data/zknB8r_WcCZzZ_o2xhN1c/tr/search.json?text=Babyconcerts')
         if (response.data.pageProps && response.data.pageProps.searchResult && response.data.pageProps.searchResult.eventCards) {
