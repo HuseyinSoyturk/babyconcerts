@@ -80,6 +80,7 @@ var app = express();
 
 // setup a 'route' to listen on the default url path
 app.get("/", (req, res) => {
+    console.log('naber')
     res.send("Hello World!");
 });
 
